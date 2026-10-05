@@ -1,0 +1,26 @@
+{
+  "expo": {
+    "name": "NearbyShare",
+    "slug": "nearby-share-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSBluetoothAlwaysUsageDescription": "Used to discover and broadcast to nearby devices over Bluetooth.",
+        "NSBluetoothPeripheralUsageDescription": "Used to broadcast your profile to nearby devices over Bluetooth.",
+        "UIBackgroundModes": ["bluetooth-central", "bluetooth-peripheral"]
+      }
+    },
+    "android": {
+      "permissions": [
+        "BLUETOOTH_SCAN",
+        "BLUETOOTH_ADVERTISE",
+        "BLUETOOTH_CONNECT",
+        "ACCESS_FINE_LOCATION"
+      ]
+    },
+    "plugins": ["expo-dev-client"]
+  }
+}
